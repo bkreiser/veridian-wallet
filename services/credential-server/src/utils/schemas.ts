@@ -1,4 +1,71 @@
 const ACDC_SCHEMAS = {
+  "EM5nDtG8j79wE3aXtK3W7yW-nC_Y5Sk7qo8SxRmdJNKU": {
+    $id: "EM5nDtG8j79wE3aXtK3W7yW-nC_Y5Sk7qo8SxRmdJNKU",
+    $schema: "http://json-schema.org/draft-07/schema#",
+    title: "IOT Permission",
+    description: "IOT Permission Credential",
+    type: "object",
+    credentialType: "IOTPermission",
+    version: "0.0.1",
+    properties: {
+      v: {
+        description: "Version",
+        type: "string",
+      },
+      d: {
+        description: "Credential SAID",
+        type: "string",
+      },
+      u: {
+        description: "One time use nonce",
+        type: "string",
+      },
+      i: {
+        description: "Issuer AID",
+        type: "string",
+      },
+      ri: {
+        description: "Credential status registry",
+        type: "string",
+      },
+      s: {
+        description: "Schema SAID",
+        type: "string",
+      },
+      a: {
+        oneOf: [
+          {
+            description: "Attributes block SAID",
+            type: "string",
+          },
+          {
+            description: "IOT Credential",
+            type: "object",
+            properties: {
+              i: {
+                description: "Issuee AID",
+                type: "string",
+              },
+              mac: {
+                description: "MAC Address",
+                type: "string",
+              },
+              server: {
+                description: "Server IP",
+                type: "string",
+              },
+              topic: {
+                description: "Server Topic",
+                type: "string",
+              },
+            },
+          },
+        ],
+      },
+    },
+    additionalProperties: false,
+    required: ["i", "ri", "s", "d", "mac", "server", "topic"],
+  },
   "EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao": {
     $id: "EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao",
     $schema: "http://json-schema.org/draft-07/schema#",

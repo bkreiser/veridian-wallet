@@ -182,7 +182,10 @@
           "placeholder": "e.g. 12345678A90123V45R67",
           "label": {
             "name": "Name",
-            "lei": "LEI"
+            "lei": "LEI",
+            "mac address": "MAC Address",
+            "server ip": "Server IP",
+            "topic": "Kafka Topic"
           },
           "button": {
             "continue": "Continue"
