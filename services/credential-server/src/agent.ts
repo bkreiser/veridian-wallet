@@ -15,7 +15,7 @@ class Agent {
     "EJxnJdxkHbRw2wVFNe4IUOPLt8fEtg9Sr3WyTjlgKoIb";
   static readonly LE_SCHEMA_SAID =
     "ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY";
-  static readonly IOT_SAID = "EE-J0v6mIVeaLtqshYQRuIYd_kr0XoARChNzqMq366Wj";
+  static readonly IOT_SAID = "EKuEdo-RjjQWY8fhnTiIHMnEyRc9gBGGY4COV46K1WCP";
 
   private static instance: Agent;
 

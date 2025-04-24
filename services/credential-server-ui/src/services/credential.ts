@@ -1,7 +1,6 @@
 import { config } from "../config";
 import { CredentialIssueRequest } from "./credential.types";
 import { httpInstance } from "./http";
-import * as Console from "node:console";
 
 const CredentialService = {
   revoke: async (contactId: string, credId: string) => {
