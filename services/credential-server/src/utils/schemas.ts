@@ -1,6 +1,6 @@
 const ACDC_SCHEMAS = {
-  "EM5nDtG8j79wE3aXtK3W7yW-nC_Y5Sk7qo8SxRmdJNKU": {
-    $id: "EM5nDtG8j79wE3aXtK3W7yW-nC_Y5Sk7qo8SxRmdJNKU",
+  "EE-J0v6mIVeaLtqshYQRuIYd_kr0XoARChNzqMq366Wj": {
+    $id: "EE-J0v6mIVeaLtqshYQRuIYd_kr0XoARChNzqMq366Wj",
     $schema: "http://json-schema.org/draft-07/schema#",
     title: "IOT Permission",
     description: "IOT Permission Credential",
@@ -59,12 +59,14 @@ const ACDC_SCHEMAS = {
                 type: "string",
               },
             },
+            additionalProperties: false,
+            required: ["i", "mac", "server", "topic"],
           },
         ],
       },
     },
     additionalProperties: false,
-    required: ["i", "ri", "s", "d", "mac", "server", "topic"],
+    required: ["i", "ri", "s", "d"],
   },
   "EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao": {
     $id: "EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao",
